@@ -39,16 +39,18 @@ nav{
     display: flex;
     justify-content: space-between;
     width: 30%;
-
 }
-nav a{
+#side_list{
+    visibility: hidden;
+}
+.list_int a{
     color: #fff;
     font-size: 1.5vw;
     font-weight: 900;
     font-family: cursive;
     position: relative;/****lezem bech kol wa7da taba3 mte3ha*/
 }
-nav a::before{
+.list_int a::before{
     content: '';
     position: absolute;
     background-image: linear-gradient( to right, #ff00fb,#fe52fb,#ff94fd,#ffe4ff);
@@ -58,7 +60,7 @@ nav a::before{
     left: 50%;
     transition: 0.3s ease;
 }
-nav a:hover::before{
+.list_int a:hover::before{
     width: 100%;
     left: 0;
 }
@@ -146,7 +148,7 @@ nav a:hover::before{
     height: 90%;
     bottom: 0%;
     right: 0;
-    transform: rotateY(180deg);
+    /* transform: rotateY(180deg); */
     z-index: 998;
     /***animatio**/
     animation: animateUser 4s linear infinite;
@@ -634,4 +636,167 @@ footer .media_logos img{
 }
 footer .media_logos img:hover{
     transform: translate(0 ,-1vh);
+}
+@media (max-width:1000px){
+    /***********header**************/
+    header{
+        background: #f2dbf7;
+    }
+    .name{
+        color: rgb(120, 18, 141);
+        font-size: 6.5vw;
+    }
+    /****lis bare***/
+    #side_list{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        visibility: visible;
+        width: 4vh;
+    }
+    .list a{
+        font-size: 7vw;
+    }
+    .list_int{
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .list{
+        position: absolute;
+        top: 0;
+        left: -50vw;
+        width: 50vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.4s ease;
+        border-radius: 0vw 5vw 5vw 0;
+        background-color: #b11ecb;
+    }
+    .list.mobile-menu{
+        visibility: visible;
+    }
+    /*****************home***************/
+    .hello{
+        font-size: 5vw;
+    }
+    .Im{
+        font-size: 9vw;
+    }
+    .Im span{
+        font-size: 9vw;
+    }
+    .paragraph_desc{
+        font-size: 4vw;
+    }
+    .buttons{
+        margin-top: 30px;
+    }
+    .buttons a{
+        background-color: rgb(120, 18, 141);
+    }
+    .media_logos{
+        margin: 30px 0;
+        display: flex;
+        justify-content: center;
+    }
+    .media_logos img{
+        width: 7vw;
+        margin: 1vw;
+    }
+    /************logo*************/
+    .user{
+        right: 20vw;
+        top: 20vh;
+        height: 30vh;
+        animation: new_user 3s linear infinite;
+    }
+    .circle1,.circle2{
+        visibility: hidden;
+    }
+    .color_bg{
+        position: absolute;
+        width: 100vw;
+        top: 20vh;
+        right: 0;
+        animation: stop 2s linear infinite;
+    
+    }
+    .new_desc{
+        margin-left: 0;
+        width: 100vw;
+        height: 50vh;
+        padding: 20%;
+        background-color: #fff;
+        animation: new_desc 3s linear infinite;
+    }
+    .discription{
+        padding: 0;
+        justify-content: end;
+    }
+    /************servesis*****************/
+    .section_title p{
+        font-size: 8vw;
+    }
+    .serveces{
+        height: 200vh;
+    }
+    /****cards***/
+    .serveces .cards{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    #card{
+        width: 50vw;
+        height: 40vh;
+        margin-bottom: 5vh;
+    }
+    #card img{
+        height: 50%;
+    }
+    #card .disc_card{
+        height: 45%;
+    }
+    .card_title{
+        font-size: 130%;
+    }
+    .card_disc{
+        font-size: 90%;
+    }
+    .card_panel1,.card_panel2,.card_panel3{
+        width: 50vw;
+        height: 40vh;
+        left: 25%;
+    }
+    .card_panel1{
+        top: 147%;
+    }
+    .card_panel2{
+        top: 195%;
+    }
+    .card_panel3{
+        top: 242%;
+    }
+    #skils_card{
+        position: absolute;
+        width: 47.5vw;
+        height: 39vh;
+        left: 25%;
+    }
+    .skils_card1{
+        top: 140%;
+    }
+    .skils_card2{
+        top: 195%;
+    }
+    .skils_card3{
+        top: 240%;
+    }
+    
 }

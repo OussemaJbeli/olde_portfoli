@@ -13,10 +13,15 @@
     <header>
         <p class="name">oussema</p>
         <nav>
-            <span><a href="#home">home</a></span>
-            <span><a href="#serveces">serveces</a></span>
-            <span><a href="#projects">projects</a></span>
-            <span><a href="#contact">contact</a></span>
+            <div class="list" id="list">
+                <div class="list_int">
+                    <span><a href="#home" id="h">home</a></span>
+                    <span><a href="#serveces">serveces</a></span>
+                    <span><a href="#projects">projects</a></span>
+                    <span><a href="#contact">contact</a></span>
+                </div>
+            </div>
+            <span><img src="icon/side_liste.png" alt="" id="side_list"></span>
         </nav>
     </header>
 
@@ -25,24 +30,26 @@
         <!-- home -->
         <section class="personel_discription" id="home">
             <div class="discription">
-                <p class="hello">Hello__</p>
-                <p class="Im">I'm<span class="multitext">developper</span></p>
-                <p class="paragraph_desc">Im a Web and Desktop Application Developer ,a YouTub content creator and a designer 
-                    I love sharing my experience with others, and I also love to learn somthing new every single day.</p>
-                <div class="buttons">
-                    <a href="https://drive.google.com/file/d/1xNu0I4Y7N_2quCvTccL4E7c2QWf58Jyr/view?usp=sharing" download="https://drive.google.com/file/d/1xNu0I4Y7N_2quCvTccL4E7c2QWf58Jyr/view?usp=sharing" class="download_cv"><p>Download CV</p></a>
-                    <a href="#projects" class="works"><p>view my works</p></a>
-                </div>
-                <div class="media_logos">
-                    <a href="https://www.linkedin.com/in/jbeli-oussema-235787253/" target="_blank"><img src="icon/in.png" alt=""></a>
-                    <a href="https://www.instagram.com/oussamajbalijbali/" target="_blank"><img src="icon/insta.png" alt=""></a>
-                    <a href="https://www.facebook.com/oussamajbali.jbali" target="_blank"><img src="icon/facebook.png" alt=""></a>
-                    <a href="https://github.com/OussemaJbeli" target="_blank"><img src="icon/git.png" alt=""></a>
-                    <a href="https://www.youtube.com/channel/UCfWmsjVfTxiMngtwlP9HrGw" target="_blank"><img src="icon/youtub.png" alt=""></a>
+                <div class="new_desc">
+                    <p class="hello">Hello__</p>
+                    <p class="Im">I'm<span class="multitext"></span></p>
+                    <p class="paragraph_desc">Im a Web and Desktop Application Developer ,a YouTub content creator and a designer 
+                        I love sharing my experience with others, and I also love to learn somthing new every single day.</p>
+                    <div class="buttons">
+                        <a href="https://drive.google.com/file/d/1xNu0I4Y7N_2quCvTccL4E7c2QWf58Jyr/view?usp=sharing" download="https://drive.google.com/file/d/1xNu0I4Y7N_2quCvTccL4E7c2QWf58Jyr/view?usp=sharing" class="download_cv"><p>Download CV</p></a>
+                        <a href="#projects" class="works"><p>view my works</p></a>
+                    </div>
+                    <div class="media_logos">
+                        <a href="https://www.linkedin.com/in/jbeli-oussema-235787253/" target="_blank"><img src="icon/in.png" alt=""></a>
+                        <a href="https://www.instagram.com/oussamajbalijbali/" target="_blank"><img src="icon/insta.png" alt=""></a>
+                        <a href="https://www.facebook.com/oussamajbali.jbali" target="_blank"><img src="icon/facebook.png" alt=""></a>
+                        <a href="https://github.com/OussemaJbeli" target="_blank"><img src="icon/git.png" alt=""></a>
+                        <a href="https://www.youtube.com/channel/UCfWmsjVfTxiMngtwlP9HrGw" target="_blank"><img src="icon/youtub.png" alt=""></a>
+                    </div>
                 </div>
             </div>
             <div class="logos">
-                <img src="icon/user2.png" alt="" class="user">
+                <img src="icon/user.png" alt="" class="user">
                 <img src="icon/color.png" alt="" class="color_bg">
                 <div class="circle1"></div>
                 <div class="circle2"></div>
@@ -210,7 +217,10 @@
                                     <img src="icon/web.webp" alt="">
                                     <div class="details">
                                         <span class="title">Portfolio</span>
-                                        <a href=""><span class="more">More details</span></a>
+                                        <a href="https://github.com/OussemaJbeli/OussemaJbeli.github.io.git" 
+                                        target="_blank">
+                                        <span class="more">More details</span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -411,7 +421,7 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
         var typingEffect = new Typed(".multitext",{
-            strings:["Coder","Youtuber","Designer"],
+            strings:["Developper","Youtuber","Designer"],
             loop : true,
             typeSpeed: 100,
             backSpeed : 80,
@@ -419,4 +429,6 @@
         })
     </script>
 </body>
+<div class="cursor"></div>
+<script src="script.js"></script>
 </html>
